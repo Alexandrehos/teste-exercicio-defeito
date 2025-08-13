@@ -9,7 +9,6 @@ print("Algoritmo para calcular a média dos números digitados.")
 
 while resp == 's' or resp == 'S':
 
-    # 1. Solicita e lê o número do usuário
     entrada = input("Digite um número: ")
 
     # Valida se a entrada é um número antes de processar
