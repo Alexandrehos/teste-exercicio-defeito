@@ -7,7 +7,7 @@ resp = 's'  # Variável para a resposta, iniciando com 's'
 
 print("Algoritmo para calcular a média dos números digitados.")
 
-while resp == 's' or resp == 'S':
+while resp == 's':
 
     entrada = input("Digite um número: ")
 
@@ -16,8 +16,8 @@ while resp == 's' or resp == 'S':
         num = float(entrada) # Usa float para aceitar números reais também
 
         # 2. Atualiza a soma e a quantidade de números
-        soma = soma + num
-        qtde = qtde + 1
+        soma += num
+        qtde += 1
 
     except ValueError:
         print("Entrada inválida. Por favor, digite um número válido.")
@@ -34,6 +34,8 @@ if qtde > 0:
     media = soma / qtde
 
     # 5. Exibe o resultado final
+    print(f"Foram digitados {qtde} números")
+    print(f"A soma de todos os números é de {soma}")
     print(f"A média dos números digitados é: {media:.2f}")
 else:
     print("Nenhum número foi digitado para calcular a média.")
