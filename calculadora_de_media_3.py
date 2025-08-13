@@ -18,7 +18,7 @@ while resp == 's' or resp == 'S':
 
         # 2. Atualiza a soma e a quantidade de números
         soma = soma + num
-        qtde = qtde - 1
+        qtde = qtde + 1
 
     except ValueError:
         print("Entrada inválida. Por favor, digite um número válido.")
